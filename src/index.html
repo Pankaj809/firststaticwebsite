@@ -1,102 +1,137 @@
 <!DOCTYPE html>
-
-<html
- 
-lang="en">
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pankaj Adhikari - Web Developer & Tech Enthusiast</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
 
-    
-<meta
- 
-charset="UTF-8">
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 2em;
+        }
 
-    
-<meta
- 
-name="viewport"
- 
-content="width=device-width, initial-scale=1.0">
+        h1, h2, h3 {
+            color: #007bff;
+        }
 
-    
-<title>Pankaj Adhikari - Web Developer & Tech Enthusiast</title>
-    <link rel="stylesheet" href="style.css">
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #007bff;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <h1>Pankaj Adhikari</h1>
-        <p>Web Developer & Tech Enthusiast</p>
+        <p class="lead">Web Developer & Tech Enthusiast</p>
     </header>
 
     <nav>
         <ul>
-            <li><a
- 
-href="#about">About Me</a></li>
-
-            
-<li><a
- 
-href="#skills">Skills</a></li>
-
-            
-<li><a
- 
-href="#projects">Projects</a></li>
-
-            
-<li><a
- 
-href="#contact">Contact</a></li>
-
-        
-</ul>
-
-    
-</nav>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>I am a passionate web developer and tech enthusiast with a knack for creating innovative and user-friendly web applications. I have a strong understanding of HTML, CSS, JavaScript, and various web development frameworks. I am also proficient in using various design tools and methodologies to create visually appealing and engaging web experiences.</p>
+            <p class="lead">I am a passionate web developer and tech enthusiast with a knack for creating innovative and user-friendly web applications. I have a strong understanding of HTML, CSS, JavaScript, and various web development frameworks. I am also proficient in using various design tools and methodologies to create visually appealing and engaging web experiences.</p>
         </section>
 
         <section id="skills">
             <h2>Skills</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript (ES6+)</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Git</li>
-                <li>Figma</li>
+            <ul class="list-group">
+                <li class="list-group-item">HTML5</li>
+                <li class="list-group-item">CSS3</li>
+                <li class="list-group-item">JavaScript (ES6+)</li>
+                <li class="list-group-item">React</li>
+                <li class="list-group-item">Node.js</li>
+                <li class="list-group-item">Git</li>
+                <li class="list-group-item">Figma</li>
             </ul>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
-            <div class="project">
-                <h3>Project Name</h3>
-                <p>Description of the project.</p>
-                <a href="project-link">Live Demo</a>
-                <a href="project-github">GitHub Repository</a>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Project Name</h3>
+                    <p class="card-text">Description of the project.</p>
+                    <a href="project-link" class="btn btn-primary">Live Demo</a>
+                    <a href="project-github" class="btn btn-secondary">GitHub Repository</a>
+                </div>
             </div>
-            <div class="project">
-                <h3>Project Name</h3>
-                <p>Description of the project.</p>
-                <a href="project-link">Live Demo</a>
-                <a href="project-github">GitHub Repository</a>
+
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h3 class="card-title">Project Name</h3>
+                    <p class="card-text">Description of the project.</p>
+                    <a href="project-link" class="btn btn-primary">Live Demo</a>
+                    <a href="project-github" class="btn btn-secondary">GitHub Repository</a>
+                </div>
             </div>
-            </section>
+        </section>
 
         <section id="contact">
             <h2>Contact</h2>
             <p>Feel free to contact me if you have any questions or want to collaborate on projects.</p>
-            <ul>
-                <li><a href="mailto:pankaj@example.com">pankaj@example.com</a></li>
-                <li><a href="https://linkedin.com/in/pankaj-adhikari">LinkedIn</a></li>
-                <li><a href="https://github.com/pankaj-adhikari">GitHub</a></li>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="mailto:pankaj@example.com">pankaj@example.com</a></li>
+                <li class="list-group-item"><a href="https://linkedin.com/in/pankaj-adhikari" target="_blank">LinkedIn</a></li>
+                <li class="list-group-item"><a href="https://github.com/pankaj-adhikari" target="_blank">GitHub</a></li>
             </ul>
         </section>
     </main>
@@ -104,5 +139,9 @@ href="#contact">Contact</a></li>
     <footer>
         <p>&copy; 2023 Pankaj Adhikari</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
